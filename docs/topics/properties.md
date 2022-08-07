@@ -189,7 +189,7 @@ public class MyTest {
 ```
 
 This modifier can be used on `var` properties declared inside the body of a class (not in the primary constructor,
-and only when the property does not have a custom getter or setter), as well as for top-level properties and local variables.
+and only when the property does not have a custom getter or setter). Do not use it for top-level properties and local variables.
 The type of the property or variable must be non-null, and it must not be a primitive type.
 
 Accessing a `lateinit` property before it has been initialized throws a special exception that clearly identifies the property
