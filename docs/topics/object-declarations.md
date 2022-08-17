@@ -25,9 +25,11 @@ fun main() {
         val world = "World"
         // object expressions extend Any, so `override` is required on `toString()`
         override fun toString() = "$hello $world"
+        fun modify(text: String) : String = text.upperCase()
     }
 //sampleEnd
-    print(helloWorld)
+    println(helloWorld)
+    println(helloWorld.modify("i am loving object expression"))
 }
 ```
 {kotlin-runnable="true"}
